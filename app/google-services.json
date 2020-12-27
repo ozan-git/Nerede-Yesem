@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "502497806818",
+    "project_id": "nerde-yesem-92416",
+    "storage_bucket": "nerde-yesem-92416.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502497806818:android:bfb73f34e01e09e8cad1bb",
+        "android_client_info": {
+          "package_name": "com.example.nerdeyesem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502497806818-te5gnmd0ti2265h7lc3tiuemnagbo7th.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nerdeyesem",
+            "certificate_hash": "ac9ae8819be9ae3edc1a563b8e231f986bba3b1f"
+          }
+        },
+        {
+          "client_id": "502497806818-cjss2lf7j8qrh0rjvfd1g5bqge949jn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXb1cD8Ako6NxqXt0bF_vBjGXrJ7WtFrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502497806818-cjss2lf7j8qrh0rjvfd1g5bqge949jn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
