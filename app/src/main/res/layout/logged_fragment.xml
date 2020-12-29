@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,28 +9,79 @@
 
     <Button
         android:id="@+id/button_log_out"
-        android:layout_width="109dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="556dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/log_out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logged_in_user_TextView" />
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="627dp" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nearbyRestaurantsRecyclerView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_64dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_64dp"
+        android:text="@string/press_for_nearby_restaurant"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStart"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="146dp"
+        android:backgroundTint="@android:color/tertiary_text_dark"
+        android:text="@string/stop"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="571dp" />
 
     <TextView
+        android:id="@+id/textViewNearbyRestaurants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nearby_restaurant"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:textSize="@dimen/title_16sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/nearbyRestaurantsRecyclerView"
+        android:layout_width="380dp"
+        android:layout_height="405dp"
+        android:layout_below="@+id/textViewNearbyRestaurants"
+        android:layout_marginStart="@dimen/margin_24dp"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <!--<TextView
         android:id="@+id/logged_in_user_TextView"
-        android:layout_width="150dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="35dp"
+        android:layout_width="2dp"
+        android:layout_height="3dp"
+        android:layout_marginEnd="139dp"
         android:gravity="center_horizontal"
         android:text="@string/todo"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/button_log_out"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/button_log_out"
+        app:layout_constraintTop_toTopOf="@+id/button_log_out" />-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

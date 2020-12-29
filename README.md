@@ -58,7 +58,8 @@ Libraries Used
   * [Foundation][0] - Components for core system capabilities, Kotlin extensions and support for
    multidex and automated testing.
   * [AppCompat][1] - Degrade gracefully on older versions of Android.
-  * [FirebaseAuth][2] Firebase Email Authentication
+  * [FirebaseAuth][2] Firebase Email Authentication.
+  * [Location Data][3] Location information about user.
   * [Architecture][10] - A collection of libraries that help you design robust, testable, and
    maintainable apps. Start with classes for managing your UI component lifecycle and handling data
    persistence.
@@ -80,6 +81,7 @@ Libraries Used
 [0]: https://developer.android.com/jetpack/components
 [1]: https://developer.android.com/topic/libraries/support-library/packages#v7-appcompat
 [2]: https://firebase.google.com/docs/auth
+[3]: https://developers.google.com/maps/documentation/android-sdk/location
 [10]: https://developer.android.com/jetpack/arch/
 [11]: https://developer.android.com/topic/libraries/data-binding/
 [12]: https://developer.android.com/topic/libraries/architecture/lifecycle

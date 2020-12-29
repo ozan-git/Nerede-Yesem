@@ -10,4 +10,7 @@
     <string name="no_account_yet_create_one">No account yet? Create one</string>
     <string name="log_out">Log Out</string>
     <string name="loggedInUserName">\"Logged In User: \"</string>
+    <string name="nearby_restaurant">Nearby Restaurant</string>
+    <string name="press_for_nearby_restaurant">Press for nearby restaurant</string>
+    <string name="stop">Stop</string>
 </resources>
