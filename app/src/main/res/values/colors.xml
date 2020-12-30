@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="location_button_color">#D16666</color>
+    <color name="log_out_green">#176E20</color>
+
+    <color name="background_star_color">#AAAAAA</color>
+    <color name="filled_rating_stars_color">#ffbf0f</color>
+    <color name="navigation_bottom_item_color_selected">#2fe581</color>
+    <color name="navigation_bottom_item_color_unselected">#333333</color>
+    <color name="card_stroke_gray">#ECECEC</color>
 </resources>

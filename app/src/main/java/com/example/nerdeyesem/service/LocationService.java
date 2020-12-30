@@ -16,7 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
 import com.example.nerdeyesem.R;
-import com.example.nerdeyesem.support.Constants;
+import com.example.nerdeyesem.support.CommonUtils;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
@@ -99,7 +99,7 @@ public class LocationService extends Service {
         // instance of the Fused Location Provider Client
         LocationServices.getFusedLocationProviderClient(this)
                 .requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
-        startForeground(Constants.LOCATION_SERVICE_ID, builder.build());
+        startForeground(CommonUtils.LOCATION_SERVICE_ID, builder.build());
     }
 
     // Stop foreground & service
@@ -115,9 +115,9 @@ public class LocationService extends Service {
         if (intent != null) {
             String action = intent.getAction();
             if (action != null) {
-                if (action.equals(Constants.ACTION_START_LOCATION_SERVICE)) {
+                if (action.equals(CommonUtils.ACTION_START_LOCATION_SERVICE)) {
                     startLocationService();
-                } else if (action.equals(Constants.ACTION_STOP_LOCATION_SERVICE)) {
+                } else if (action.equals(CommonUtils.ACTION_STOP_LOCATION_SERVICE)) {
                     stopLocationService();
                 }
             }

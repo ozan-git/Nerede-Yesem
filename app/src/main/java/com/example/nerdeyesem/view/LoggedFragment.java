@@ -21,7 +21,7 @@ import androidx.navigation.Navigation;
 
 import com.example.nerdeyesem.R;
 import com.example.nerdeyesem.service.LocationService;
-import com.example.nerdeyesem.support.Constants;
+import com.example.nerdeyesem.support.CommonUtils;
 import com.example.nerdeyesem.viewmodel.LoggedViewModel;
 
 public class LoggedFragment extends Fragment {
@@ -59,7 +59,8 @@ public class LoggedFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.logged_fragment, container, false);
 
@@ -69,7 +70,8 @@ public class LoggedFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view,
+                              @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         isButtonsClicked();
@@ -118,7 +120,7 @@ public class LoggedFragment extends Fragment {
     private void startLocationService() {
         if (!isLocationServiceRunning()) {
             Intent intent = new Intent(requireActivity().getApplicationContext(), LocationService.class);
-            intent.setAction(Constants.ACTION_START_LOCATION_SERVICE);
+            intent.setAction(CommonUtils.ACTION_START_LOCATION_SERVICE);
             requireActivity().startService(intent);
             Toast.makeText(requireContext(), "Location service started", Toast.LENGTH_SHORT).show();
         }
@@ -127,14 +129,16 @@ public class LoggedFragment extends Fragment {
     private void stopLocationService() {
         if (isLocationServiceRunning()) {
             Intent intent = new Intent(requireActivity().getApplicationContext(), LocationService.class);
-            intent.setAction(Constants.ACTION_STOP_LOCATION_SERVICE);
+            intent.setAction(CommonUtils.ACTION_STOP_LOCATION_SERVICE);
             requireActivity().startService(intent);
             Toast.makeText(requireContext(), "Location service stopped", Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == REQUEST_CODE_LOCATION_PERMISSION && grantResults.length > 0) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
