@@ -3,7 +3,7 @@
     <solid android:color="@color/teal_700" />
     <gradient android:startColor="@color/teal_700"/>
     <gradient android:endColor="@color/design_default_color_secondary"/>
-    <gradient android:centerX="50%"/>
+    <gradient android:centerX="100%"/>
     <gradient android:centerColor="@color/material_on_primary_disabled"/>
 
 </shape>

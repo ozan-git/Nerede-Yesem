@@ -78,7 +78,7 @@ public class LoggedFragment extends Fragment {
     }
 
     private void isButtonsClicked() {
-        logOutButton.setOnClickListener(v -> mViewModel.logOut());
+        logOutButton.setOnClickListener(this::onClick);
         getLocationStartButton.setOnClickListener(v -> {
             if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION)
                     != PackageManager.PERMISSION_GRANTED &&
@@ -147,5 +147,10 @@ public class LoggedFragment extends Fragment {
                 Toast.makeText(requireContext(), "Permission denied!", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    private void onClick(View v) {
+        mViewModel.logOut();
+        stopLocationService();
     }
 }
