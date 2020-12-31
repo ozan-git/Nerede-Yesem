@@ -63,19 +63,16 @@ Libraries Used
   * [Architecture][10] - A collection of libraries that help you design robust, testable, and
    maintainable apps. Start with classes for managing your UI component lifecycle and handling data
    persistence.
-  * [Data Binding][11] - Declaratively bind observable data to UI elements.
   * [Lifecycle][12] - Create a UI that automatically responds to lifecycle events.
   * [LiveData][13] - Build data objects that notify views when the underlying database changes.
   * [Navigation][14] - Handle everything needed for in-app navigation.
   * [ViewModel][17] - Store UI-related data that isn't destroyed on app rotations. Easily schedule
      asynchronous tasks for optimal execution.
-  * [WorkManager][18] - Manage your Android background jobs.
   * [UI][30] - Details on why and how to use UI Components in your apps - together or separate
-  * [Animations & Transitions][31] - Move widgets and transition between screens.
   * [Fragment][34] - A basic unit of composable UI.
   * [Layout][35] - Lay out widgets using different algorithms.
   * Third party
-  * [Glide][90] for image loading
+  
 
 
 [0]: https://developer.android.com/jetpack/components
@@ -83,17 +80,13 @@ Libraries Used
 [2]: https://firebase.google.com/docs/auth
 [3]: https://developers.google.com/maps/documentation/android-sdk/location
 [10]: https://developer.android.com/jetpack/arch/
-[11]: https://developer.android.com/topic/libraries/data-binding/
 [12]: https://developer.android.com/topic/libraries/architecture/lifecycle
 [13]: https://developer.android.com/topic/libraries/architecture/livedata
 [14]: https://developer.android.com/topic/libraries/architecture/navigation/
-[16]: https://developer.android.com/topic/libraries/architecture/room
 [17]: https://developer.android.com/topic/libraries/architecture/viewmodel
-[18]: https://developer.android.com/topic/libraries/architecture/workmanager
 [30]: https://developer.android.com/guide/topics/ui
-[31]: https://developer.android.com/training/animation/
 [34]: https://developer.android.com/guide/components/fragments
 [35]: https://developer.android.com/guide/topics/ui/declaring-layout
-[90]: https://bumptech.github.io/glide/
+
 
 
